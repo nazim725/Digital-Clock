@@ -23,7 +23,7 @@ if(hours>12){
     timeFormet='PM'
 }
 
-// day add kora
+
   let weekday = new Array(7);
   weekday[0] = "Sunday";
   weekday[1] = "Monday";
@@ -33,7 +33,7 @@ if(hours>12){
   weekday[5] = "Friday";
   weekday[6] = "Saturday";
   const day = weekday[date.getDay()];
-//   document.getElementById("day").innerText = day;
+  document.getElementById("day").innerText = day;
 //   month add kora
 const month = new Array();
 month[0] = "January";
@@ -49,15 +49,12 @@ month[9] = "October";
 month[10] = "November";
 month[11] = "December";
 const currentmonth = month[date.getMonth()];
-// document.getElementById('month').innerText=currentmonth;
+document.getElementById('month').innerText=currentmonth;
 // Year add kora
-const year=date.getFullYear()
 
+const year=date.getFullYear();
+document.getElementById('year').innerText=year;
 
-const totalInformation=`Day: <span>${day}</span> <br>
-Month: <span>${currentmonth}</span> <br>
-Year: <span>${year}</span>`;
-document.getElementById("daily-information").innerHTML = totalInformation;
 
 let time=`${hours}:${min}:${second} <small>${timeFormet}</small>`;
 document.getElementById('clock').innerHTML=time;
