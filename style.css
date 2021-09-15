@@ -1,0 +1,24 @@
+.watch{
+    width:500px;
+    height: 500px;
+    border: 20px solid gray;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(197, 158, 158, 0.568);
+    border-radius: 20px;
+}
+
+.clock{
+    width: 200px;
+}
+small{
+    font-size: 20px;
+}
+span{
+    color: rgb(218, 62, 5);
+}
+#daily-information{
+    background-color: rgba(50, 112, 236, 0.979);
+    border-radius: 10px;
+    margin-top: 30px;
+}
